@@ -98,4 +98,4 @@ The design uses Basys 3 block RAM as a framebuffer. Because the board has limite
 
 After reset or changing resolution mode, wait about one frame for the framebuffer to refill.
 
-Thanks to [Quackudy](https://github.com/Quackudy), [ImtaeZ](https://github.com/ImtaeZ), and [Mavin]() for helping with this project😸🙏.
+Thanks to [Quackudy](https://github.com/Quackudy), [ImtaeZ](https://github.com/ImtaeZ), and [Mavin](https://github.com/MavinMetavin) for helping with this project😸🙏.
