@@ -97,3 +97,5 @@ fnproject.runs/impl_1/top_ov7670_vga.bit
 The design uses Basys 3 block RAM as a framebuffer. Because the board has limited memory, full-resolution mode uses grayscale, while the lower-resolution mode keeps color.
 
 After reset or changing resolution mode, wait about one frame for the framebuffer to refill.
+
+Thanks to [Quackudy](https://github.com/Quackudy), [ImtaeZ](https://github.com/ImtaeZ), and [Mavin]() for helping with this project😸🙏.
