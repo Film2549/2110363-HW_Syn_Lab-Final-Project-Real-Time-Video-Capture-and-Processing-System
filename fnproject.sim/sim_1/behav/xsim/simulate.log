@@ -1,0 +1,3 @@
+Time resolution is 1 ps
+PASS: tb_framebuffer_dualport
+$finish called at time : 400 ns : File "C:/all_needed_for_vivado/sim/tb_framebuffer_dualport.v" Line 173

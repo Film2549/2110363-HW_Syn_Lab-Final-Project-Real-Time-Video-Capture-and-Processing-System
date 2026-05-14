@@ -1,0 +1,15 @@
+0.7
+2020.2
+Nov 14 2025
+19:37:27
+C:/all_needed_for_vivado/fnproject.sim/sim_1/behav/xsim/glbl.v,1756381829,verilog,,,,glbl,,,,,,,,
+C:/all_needed_for_vivado/rtl/framebuffer_dualport.v,1778577083,verilog,,C:/all_needed_for_vivado/sim/tb_framebuffer_dualport.v,,framebuffer_bank_3bit;framebuffer_dualmode,,,../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/all_needed_for_vivado/rtl/ov7670_capture.v,1778576690,verilog,,C:/all_needed_for_vivado/sim/tb_ov7670_capture.v,,ov7670_capture,,,../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/all_needed_for_vivado/rtl/ov7670_sccb_init.v,1778578196,verilog,,C:/all_needed_for_vivado/sim/tb_ov7670_sccb_init.v,,ov7670_sccb_init,,,../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/all_needed_for_vivado/rtl/pixel_filters.v,1778578078,verilog,,C:/all_needed_for_vivado/sim/tb_pixel_filters.v,,pixel_filters,,,../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/all_needed_for_vivado/rtl/vga_timing_640x480.v,1778577679,verilog,,C:/all_needed_for_vivado/sim/tb_vga_timing.v,,vga_timing_640x480,,,../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/all_needed_for_vivado/sim/tb_framebuffer_dualport.v,1778601306,verilog,,,,tb_framebuffer_dualport,,,../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/all_needed_for_vivado/sim/tb_ov7670_capture.v,1778481847,verilog,,,,tb_ov7670_capture,,,../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/all_needed_for_vivado/sim/tb_ov7670_sccb_init.v,1778601306,verilog,,,,tb_ov7670_sccb_init,,,../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/all_needed_for_vivado/sim/tb_pixel_filters.v,1778469611,verilog,,,,tb_pixel_filters,,,../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,
+C:/all_needed_for_vivado/sim/tb_vga_timing.v,1778469711,verilog,,,,tb_vga_timing,,,../../../../../AMDDesignTools/2025.2/Vivado/data/rsb/busdef,,,,,

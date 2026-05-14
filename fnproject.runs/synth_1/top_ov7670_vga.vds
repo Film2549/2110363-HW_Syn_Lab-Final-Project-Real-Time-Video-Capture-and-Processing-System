@@ -1,0 +1,451 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed May 13 20:57:16 2026
+# Process ID         : 500
+# Current directory  : C:/all_needed_for_vivado/fnproject.runs/synth_1
+# Command line       : vivado.exe -log top_ov7670_vga.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_ov7670_vga.tcl
+# Log file           : C:/all_needed_for_vivado/fnproject.runs/synth_1/top_ov7670_vga.vds
+# Journal file       : C:/all_needed_for_vivado/fnproject.runs/synth_1\vivado.jou
+# Running On         : MSI-FilmKub
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i7-12650H
+# CPU Frequency      : 2688 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 16
+# Host memory        : 16868 MB
+# Swap memory        : 10737 MB
+# Total Virtual      : 27606 MB
+# Available Virtual  : 6297 MB
+#-----------------------------------------------------------
+source top_ov7670_vga.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental D:/CP_2nd_Year/HW_syn_lab/Final_Project/fromscratch/fnproject/fnproject.srcs/utils_1/imports/synth_1/top_ov7670_vga.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/CP_2nd_Year/HW_syn_lab/Final_Project/fromscratch/fnproject/fnproject.srcs/utils_1/imports/synth_1/top_ov7670_vga.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top_ov7670_vga -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3496
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1266.012 ; gain = 543.035
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_ov7670_vga' [C:/all_needed_for_vivado/rtl/top_ov7670_vga.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clock_gen_25mhz' [C:/all_needed_for_vivado/rtl/top_ov7670_vga.v:289]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_BASE' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:95964]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 1.000000e+01 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000e+00 - type: double 
+	Parameter CLKIN1_PERIOD bound to: 1.000000e+01 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 4.000000e+01 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 5.000000e-01 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000e+00 - type: double 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 1.000000e-02 - type: double 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_BASE' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:95964]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-6155] done synthesizing module 'clock_gen_25mhz' (0#1) [C:/all_needed_for_vivado/rtl/top_ov7670_vga.v:289]
+INFO: [Synth 8-6157] synthesizing module 'ov7670_sccb_init' [C:/all_needed_for_vivado/rtl/ov7670_sccb_init.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ov7670_sccb_init' (0#1) [C:/all_needed_for_vivado/rtl/ov7670_sccb_init.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ov7670_capture' [C:/all_needed_for_vivado/rtl/ov7670_capture.v:1]
+	Parameter FULL_FRAME_WIDTH bound to: 640 - type: integer 
+	Parameter FULL_FRAME_HEIGHT bound to: 480 - type: integer 
+	Parameter FULL_ADDR_WIDTH bound to: 19 - type: integer 
+	Parameter BASE_FRAME_WIDTH bound to: 320 - type: integer 
+	Parameter BASE_FRAME_HEIGHT bound to: 240 - type: integer 
+	Parameter BASE_ADDR_WIDTH bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ov7670_capture' (0#1) [C:/all_needed_for_vivado/rtl/ov7670_capture.v:1]
+INFO: [Synth 8-6157] synthesizing module 'vga_timing_640x480' [C:/all_needed_for_vivado/rtl/vga_timing_640x480.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'vga_timing_640x480' (0#1) [C:/all_needed_for_vivado/rtl/vga_timing_640x480.v:1]
+INFO: [Synth 8-6157] synthesizing module 'framebuffer_dualmode' [C:/all_needed_for_vivado/rtl/framebuffer_dualport.v:29]
+	Parameter FULL_ADDR_WIDTH bound to: 19 - type: integer 
+	Parameter BASE_ADDR_WIDTH bound to: 17 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'framebuffer_bank_3bit' [C:/all_needed_for_vivado/rtl/framebuffer_dualport.v:1]
+	Parameter ADDR_WIDTH bound to: 17 - type: integer 
+	Parameter DEPTH bound to: 76800 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'framebuffer_bank_3bit' (0#1) [C:/all_needed_for_vivado/rtl/framebuffer_dualport.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'framebuffer_dualmode' (0#1) [C:/all_needed_for_vivado/rtl/framebuffer_dualport.v:29]
+INFO: [Synth 8-6157] synthesizing module 'pixel_filters' [C:/all_needed_for_vivado/rtl/pixel_filters.v:1]
+INFO: [Synth 8-226] default block is never used [C:/all_needed_for_vivado/rtl/pixel_filters.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'pixel_filters' (0#1) [C:/all_needed_for_vivado/rtl/pixel_filters.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top_ov7670_vga' (0#1) [C:/all_needed_for_vivado/rtl/top_ov7670_vga.v:1]
+WARNING: [Synth 8-3917] design top_ov7670_vga has port led[15] driven by constant 0
+WARNING: [Synth 8-3917] design top_ov7670_vga has port led[14] driven by constant 0
+WARNING: [Synth 8-3917] design top_ov7670_vga has port led[13] driven by constant 0
+WARNING: [Synth 8-3917] design top_ov7670_vga has port led[12] driven by constant 0
+WARNING: [Synth 8-3917] design top_ov7670_vga has port led[11] driven by constant 0
+WARNING: [Synth 8-3917] design top_ov7670_vga has port led[10] driven by constant 0
+WARNING: [Synth 8-3917] design top_ov7670_vga has port led[9] driven by constant 0
+WARNING: [Synth 8-3917] design top_ov7670_vga has port cam_pwdn driven by constant 0
+WARNING: [Synth 8-3917] design top_ov7670_vga has port cam_reset driven by constant 1
+WARNING: [Synth 8-7129] Port sw[13] in module top_ov7670_vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[12] in module top_ov7670_vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[11] in module top_ov7670_vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[10] in module top_ov7670_vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[9] in module top_ov7670_vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[8] in module top_ov7670_vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[7] in module top_ov7670_vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[6] in module top_ov7670_vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[5] in module top_ov7670_vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[4] in module top_ov7670_vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[3] in module top_ov7670_vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[2] in module top_ov7670_vga is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1390.109 ; gain = 667.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1390.109 ; gain = 667.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1390.109 ; gain = 667.133
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1390.109 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/all_needed_for_vivado/constraints/basys3_ov7670_vga.xdc]
+INFO: [Timing 38-2] Deriving generated clocks [C:/all_needed_for_vivado/constraints/basys3_ov7670_vga.xdc:10]
+Finished Parsing XDC File [C:/all_needed_for_vivado/constraints/basys3_ov7670_vga.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/all_needed_for_vivado/constraints/basys3_ov7670_vga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_ov7670_vga_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_ov7670_vga_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1472.074 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  MMCME2_BASE => MMCME2_ADV: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1472.074 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1472.074 ; gain = 749.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1472.074 ; gain = 749.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1472.074 ; gain = 749.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1472.074 ; gain = 749.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   24 Bit       Adders := 1     
+	   2 Input   19 Bit       Adders := 1     
+	   3 Input   19 Bit       Adders := 1     
+	   2 Input   17 Bit       Adders := 1     
+	   3 Input   17 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 6     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 2     
+	   5 Input    8 Bit       Adders := 2     
+	   3 Input    7 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 2     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               19 Bit    Registers := 2     
+	               17 Bit    Registers := 2     
+	               12 Bit    Registers := 3     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 6     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 6     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 19    
++---RAMs : 
+	             225K Bit	(76800 X 3 bit)          RAMs := 4     
++---ROMs : 
+	                    ROMs := 1     
++---Muxes : 
+	  14 Input   24 Bit        Muxes := 1     
+	   2 Input   17 Bit        Muxes := 2     
+	   2 Input   12 Bit        Muxes := 3     
+	   4 Input   12 Bit        Muxes := 1     
+	   5 Input   12 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 4     
+	  14 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 4     
+	  14 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 5     
+	   4 Input    3 Bit        Muxes := 1     
+	  14 Input    2 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 1     
+	  14 Input    1 Bit        Muxes := 12    
+	   2 Input    1 Bit        Muxes := 28    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design top_ov7670_vga has port led[15] driven by constant 0
+WARNING: [Synth 8-3917] design top_ov7670_vga has port led[14] driven by constant 0
+WARNING: [Synth 8-3917] design top_ov7670_vga has port led[13] driven by constant 0
+WARNING: [Synth 8-3917] design top_ov7670_vga has port led[12] driven by constant 0
+WARNING: [Synth 8-3917] design top_ov7670_vga has port led[11] driven by constant 0
+WARNING: [Synth 8-3917] design top_ov7670_vga has port led[10] driven by constant 0
+WARNING: [Synth 8-3917] design top_ov7670_vga has port led[9] driven by constant 0
+WARNING: [Synth 8-3917] design top_ov7670_vga has port cam_pwdn driven by constant 0
+WARNING: [Synth 8-3917] design top_ov7670_vga has port cam_reset driven by constant 1
+WARNING: [Synth 8-7129] Port sw[13] in module top_ov7670_vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[12] in module top_ov7670_vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[11] in module top_ov7670_vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[10] in module top_ov7670_vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[9] in module top_ov7670_vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[8] in module top_ov7670_vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[7] in module top_ov7670_vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[6] in module top_ov7670_vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[5] in module top_ov7670_vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[4] in module top_ov7670_vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[3] in module top_ov7670_vga is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[2] in module top_ov7670_vga is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (u_framebuffer/u_bank0/mem_reg_mux_sel_a_pos_1) is unused and will be removed from module top_ov7670_vga.
+WARNING: [Synth 8-3332] Sequential element (u_framebuffer/u_bank0/mem_reg_mux_sel_a_pos_1__0) is unused and will be removed from module top_ov7670_vga.
+WARNING: [Synth 8-3332] Sequential element (u_framebuffer/u_bank0/mem_reg_mux_sel_a_pos_1__1) is unused and will be removed from module top_ov7670_vga.
+WARNING: [Synth 8-3332] Sequential element (u_framebuffer/u_bank1/mem_reg_mux_sel_a_pos_1) is unused and will be removed from module top_ov7670_vga.
+WARNING: [Synth 8-3332] Sequential element (u_framebuffer/u_bank1/mem_reg_mux_sel_a_pos_1__0) is unused and will be removed from module top_ov7670_vga.
+WARNING: [Synth 8-3332] Sequential element (u_framebuffer/u_bank1/mem_reg_mux_sel_a_pos_1__1) is unused and will be removed from module top_ov7670_vga.
+WARNING: [Synth 8-3332] Sequential element (u_framebuffer/u_bank2/mem_reg_mux_sel_a_pos_1) is unused and will be removed from module top_ov7670_vga.
+WARNING: [Synth 8-3332] Sequential element (u_framebuffer/u_bank2/mem_reg_mux_sel_a_pos_1__0) is unused and will be removed from module top_ov7670_vga.
+WARNING: [Synth 8-3332] Sequential element (u_framebuffer/u_bank2/mem_reg_mux_sel_a_pos_1__1) is unused and will be removed from module top_ov7670_vga.
+WARNING: [Synth 8-3332] Sequential element (u_framebuffer/u_bank3/mem_reg_mux_sel_a_pos_1) is unused and will be removed from module top_ov7670_vga.
+WARNING: [Synth 8-3332] Sequential element (u_framebuffer/u_bank3/mem_reg_mux_sel_a_pos_1__0) is unused and will be removed from module top_ov7670_vga.
+WARNING: [Synth 8-3332] Sequential element (u_framebuffer/u_bank3/mem_reg_mux_sel_a_pos_1__1) is unused and will be removed from module top_ov7670_vga.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1478.984 ; gain = 756.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++---------------+-----------------------------+---------------+----------------+
+|Module Name    | RTL Object                  | Depth x Width | Implemented As | 
++---------------+-----------------------------+---------------+----------------+
+|top_ov7670_vga | u_sccb_init/lut_idx_reg_rep | 128x16        | Block RAM      | 
++---------------+-----------------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++---------------+-------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name    | RTL Object                    | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------+-------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|top_ov7670_vga | u_framebuffer/u_bank0/mem_reg | 75 K x 3(NO_CHANGE)    | W |   | 75 K x 3(WRITE_FIRST)  |   | R | Port A and B     | 0      | 9      | 
+|top_ov7670_vga | u_framebuffer/u_bank1/mem_reg | 75 K x 3(NO_CHANGE)    | W |   | 75 K x 3(WRITE_FIRST)  |   | R | Port A and B     | 0      | 9      | 
+|top_ov7670_vga | u_framebuffer/u_bank2/mem_reg | 75 K x 3(NO_CHANGE)    | W |   | 75 K x 3(WRITE_FIRST)  |   | R | Port A and B     | 0      | 9      | 
+|top_ov7670_vga | u_framebuffer/u_bank3/mem_reg | 75 K x 3(NO_CHANGE)    | W |   | 75 K x 3(WRITE_FIRST)  |   | R | Port A and B     | 0      | 9      | 
++---------------+-------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1586.043 ; gain = 863.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1640.969 ; gain = 917.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++---------------+-------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name    | RTL Object                    | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------+-------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|top_ov7670_vga | u_framebuffer/u_bank0/mem_reg | 75 K x 3(NO_CHANGE)    | W |   | 75 K x 3(WRITE_FIRST)  |   | R | Port A and B     | 0      | 9      | 
+|top_ov7670_vga | u_framebuffer/u_bank1/mem_reg | 75 K x 3(NO_CHANGE)    | W |   | 75 K x 3(WRITE_FIRST)  |   | R | Port A and B     | 0      | 9      | 
+|top_ov7670_vga | u_framebuffer/u_bank2/mem_reg | 75 K x 3(NO_CHANGE)    | W |   | 75 K x 3(WRITE_FIRST)  |   | R | Port A and B     | 0      | 9      | 
+|top_ov7670_vga | u_framebuffer/u_bank3/mem_reg | 75 K x 3(NO_CHANGE)    | W |   | 75 K x 3(WRITE_FIRST)  |   | R | Port A and B     | 0      | 9      | 
++---------------+-------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance u_framebuffer/u_bank0/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_framebuffer/u_bank0/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_framebuffer/u_bank0/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_framebuffer/u_bank0/mem_reg_1_0__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_framebuffer/u_bank0/mem_reg_1_1__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_framebuffer/u_bank0/mem_reg_1_2__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_framebuffer/u_bank1/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_framebuffer/u_bank1/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_framebuffer/u_bank1/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_framebuffer/u_bank1/mem_reg_1_0__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_framebuffer/u_bank1/mem_reg_1_1__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_framebuffer/u_bank1/mem_reg_1_2__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_framebuffer/u_bank2/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_framebuffer/u_bank2/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_framebuffer/u_bank2/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_framebuffer/u_bank2/mem_reg_1_0__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_framebuffer/u_bank2/mem_reg_1_1__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_framebuffer/u_bank2/mem_reg_1_2__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_framebuffer/u_bank3/mem_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_framebuffer/u_bank3/mem_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_framebuffer/u_bank3/mem_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_framebuffer/u_bank3/mem_reg_1_0__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_framebuffer/u_bank3/mem_reg_1_1__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_framebuffer/u_bank3/mem_reg_1_2__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_sccb_init/lut_idx_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1650.027 ; gain = 927.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 1861.613 ; gain = 1138.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 1861.613 ; gain = 1138.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 1861.613 ; gain = 1138.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 1861.613 ; gain = 1138.637
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 1862.688 ; gain = 1139.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 1862.688 ; gain = 1139.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |BUFG        |     4|
+|2     |CARRY4      |    33|
+|3     |LUT1        |    34|
+|4     |LUT2        |    42|
+|5     |LUT3        |   194|
+|6     |LUT4        |    64|
+|7     |LUT5        |    69|
+|8     |LUT6        |   153|
+|9     |MMCME2_BASE |     1|
+|10    |RAMB18E1    |     1|
+|11    |RAMB36E1    |    36|
+|14    |FDRE        |   264|
+|15    |FDSE        |    10|
+|16    |IBUF        |    17|
+|17    |IOBUF       |     1|
+|18    |OBUF        |    34|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 1862.688 ; gain = 1139.711
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 33 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1862.688 ; gain = 1057.746
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 1862.688 ; gain = 1139.711
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1867.875 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 72 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1875.773 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+  MMCME2_BASE => MMCME2_ADV: 1 instance 
+
+Synth Design complete | Checksum: 6364226
+INFO: [Common 17-83] Releasing license: Synthesis
+70 Infos, 54 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:01:06 . Memory (MB): peak = 1875.773 ; gain = 1341.473
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1875.773 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/all_needed_for_vivado/fnproject.runs/synth_1/top_ov7670_vga.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_ov7670_vga_utilization_synth.rpt -pb top_ov7670_vga_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 13 20:58:31 2026...
